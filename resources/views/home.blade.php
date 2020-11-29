@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="container">
-    <example-component />
+    <palapa-billing />
 </div>
 @endsection
