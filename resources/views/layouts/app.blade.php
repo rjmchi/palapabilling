@@ -21,6 +21,12 @@
 </head>
 <body>
     <div id="app">
+        <div class="row justify-content-end">
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="mr-5 mt-2">
+                @csrf
+                <button class="btn-sm btn-secondary mr-5">Logout</button>
+            </form>
+        </div>                       
         <main class="py-4">
             @yield('content')
         </main>
